@@ -2,21 +2,21 @@
 
 namespace TypingTest.Stats
 {
-	class TimeStat
+	internal static class TimeStat
 	{
 		public static readonly TimeSpan TypingTime = TimeSpan.FromMinutes(1);
-		public static double Time = TypingTime.TotalSeconds;
+		public static double TotalTime = TypingTime.TotalSeconds;
 
 		public static void ShowTime()
 		{
 			Console.SetCursorPosition(0, 0);
-			Console.Write($"Time: {Time}");
+			Console.Write($"Time: {TotalTime}");
 
 			//Avoid the high time visual bug
-			if (Time == 10)
+			if (TotalTime == 10)
 				Console.Clear();
 
-			else if (Time == 0)
+			else if (TotalTime == 0)
 				MainClass.Run = false;
 		}
 	}

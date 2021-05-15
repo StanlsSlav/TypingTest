@@ -36,7 +36,6 @@ namespace TypingTest
 				{
 					case ConsoleKey.Escape: MainClass._Run = false; break;
 					case ConsoleKey.Spacebar: TypedWords++; break;
-					default: break;
 				}
 
 				if (keyPress == CharsToType[CurrentIndex])

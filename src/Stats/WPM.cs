@@ -5,7 +5,7 @@ namespace TypingTest.Stats
 {
 	class WPSStat
 	{
-		private static string _TotalTypedText = default;
+		private static string _TotalTypedText;
 		public static double TypedWords = 0f;
 
 		public static void ShowWPS()

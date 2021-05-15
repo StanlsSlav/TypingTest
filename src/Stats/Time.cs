@@ -2,7 +2,7 @@
 
 namespace TypingTest.Stats
 {
-	internal static class TimeStat
+	internal static class Time
 	{
 		public static readonly TimeSpan TypingTime = TimeSpan.FromMinutes(1);
 		public static double TotalTime = TypingTime.TotalSeconds;

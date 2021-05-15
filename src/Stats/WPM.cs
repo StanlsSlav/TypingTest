@@ -1,9 +1,9 @@
 ﻿using System;
-using static TypingTest.Stats.TimeStat;
+using static TypingTest.Stats.Time;
 
 namespace TypingTest.Stats
 {
-	class WPSStat
+	internal static class Wps
 	{
 		private static string _totalTypedText;
 		public static double TypedWords = 0f;

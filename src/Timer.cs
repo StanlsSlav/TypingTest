@@ -2,13 +2,13 @@
 using System.Threading;
 using System.Threading.Tasks;
 using static TypingTest.TypingProcess;
-using static TypingTest.Stats.TimeStat;
-using static TypingTest.Stats.WPSStat;
+using static TypingTest.Stats.Time;
+using static TypingTest.Stats.Wps;
 using static System.Console;
 
 namespace TypingTest
 {
-	class Timer
+	internal static class Timer
 	{
 		private static int _consoleWidth = WindowWidth;
 
@@ -25,7 +25,7 @@ namespace TypingTest
 				SetCursorPosition(Column, Row);
 
 				await Task.Delay(TimeSpan.FromSeconds(1));
-				Time -= 1;
+				TotalTime -= 1;
 			}
 
 			Clear();

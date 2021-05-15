@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using static TypingTest.Timer;
-using static TypingTest.Stats.WPSStat;
+using static TypingTest.Stats.Wps;
 
 namespace TypingTest
 {
-	class MainClass
+	internal static class MainClass
 	{
 		public static bool Run = true;
 
@@ -18,7 +18,7 @@ namespace TypingTest
 		}
 	}
 
-	class TypingProcess
+	internal static class TypingProcess
 	{
 		public static readonly string _LoremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ";
 		private static readonly char[] CharsToType = _LoremText.ToCharArray();

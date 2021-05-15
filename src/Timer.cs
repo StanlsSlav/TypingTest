@@ -10,11 +10,11 @@ namespace TypingTest
 {
 	class Timer
 	{
-		private static int _ConsoleWidth = WindowWidth;
+		private static int _consoleWidth = WindowWidth;
 
 		public static async Task ShowStats()
 		{
-			while (MainClass._Run)
+			while (MainClass.Run)
 			{
 				ShowTime();
 				ShowWPS();
@@ -25,14 +25,14 @@ namespace TypingTest
 				SetCursorPosition(Column, Row);
 
 				await Task.Delay(TimeSpan.FromSeconds(1));
-				_Time -= 1;
+				Time -= 1;
 			}
 
 			Clear();
 			WriteLine($"Test finished" +
-				$"\n\nTyped {Math.Round(TypedWords / _TypingTime.TotalSeconds, 2)} words per second " +
+				$"\n\nTyped {Math.Round(TypedWords / TypingTime.TotalSeconds, 2)} words per second " +
 				$"- {TypedWords} words per minute " +
-				$"- Possibly {TypedWords * _TypingTime.TotalSeconds} words per hour");
+				$"- Possibly {TypedWords * TypingTime.TotalSeconds} words per hour");
 
 			//Avoid console exit if user keeps typing
 			Thread.Sleep(TimeSpan.FromSeconds(2));
@@ -41,9 +41,9 @@ namespace TypingTest
 
 		private static void CheckWidth()
 		{
-			if (_ConsoleWidth != WindowWidth)
+			if (_consoleWidth != WindowWidth)
 			{
-				_ConsoleWidth = WindowWidth;
+				_consoleWidth = WindowWidth;
 				Clear();
 
 				ShowTime();

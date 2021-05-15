@@ -1,7 +1,7 @@
 ﻿using System;
-using static TypingTest.TimeStat;
+using static TypingTest.Stats.TimeStat;
 
-namespace TypingTest
+namespace TypingTest.Stats
 {
 	class WPSStat
 	{

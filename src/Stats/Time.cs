@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TypingTest
+namespace TypingTest.Stats
 {
 	class TimeStat
 	{

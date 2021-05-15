@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using static TypingTest.Timer;
-using static TypingTest.WPSStat;
+using static TypingTest.Stats.WPSStat;
 
 namespace TypingTest
 {

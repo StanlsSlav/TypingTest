@@ -2,8 +2,8 @@
 using System.Threading;
 using System.Threading.Tasks;
 using static TypingTest.TypingProcess;
-using static TypingTest.TimeStat;
-using static TypingTest.WPSStat;
+using static TypingTest.Stats.TimeStat;
+using static TypingTest.Stats.WPSStat;
 using static System.Console;
 
 namespace TypingTest

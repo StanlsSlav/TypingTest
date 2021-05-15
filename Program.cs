@@ -24,7 +24,7 @@ namespace TypingTest
 		private static readonly char[] CharsToType = _LoremText.ToCharArray();
 
 		private static int _currentIndex;
-		public static int Row = 3, Column = 0;
+		public static int Row = 3, Column;
 
 		public static Task StartTyping()
 		{
